@@ -69,7 +69,7 @@ export default function Admin() {
               <StyledTableCell>Interest &nbsp;(%)</StyledTableCell>
               <StyledTableCell>Time</StyledTableCell>
               <StyledTableCell>Status</StyledTableCell>
-              <StyledTableCell align="right">Paid By</StyledTableCell>
+              <StyledTableCell align="right">Moneylender</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>

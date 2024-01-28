@@ -40,11 +40,11 @@ export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    localStorage.setItem("email", data.get("email"));
     if (data.get("Role") == "Borrower") {
       const email = data.get("email");
       const password = data.get("password");
       const role = data.get("Role");
-      localStorage.setItem("email", email);
       Meteor.call("borrower.create", { email, password, role }, (err, res) => {
         if (err) {
           onError(err);
